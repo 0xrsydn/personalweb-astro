@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css'
+import Nav from '@/components/Nav';
 import { ModeToggle } from '@/components/ModeToggle';
+import '@fontsource-variable/archivo';
 
 interface Props {
     title: string;
@@ -36,11 +38,10 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="bg-bg dark:bg-darkBg text-text dark:text-darkText">
-		<header class="p-4">
-			<div class="max-w-7xl w-full mx-auto flex justify-end items-center relative">
-				<div>
-					<ModeToggle client:load />
-				</div>
+		<header class="relative">
+			<Nav client:load />
+			<div class="absolute top-4 right-4 md:top-8 md:right-8">
+				<ModeToggle client:load />
 			</div>
 		</header>
 		<main class="max-w-7xl mx-auto p-4">

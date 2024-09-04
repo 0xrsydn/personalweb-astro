@@ -1,3 +1,5 @@
+import defaultTheme from 'tailwindcss/defaultTheme';
+
 /** @type {import('tailwindcss').Config} */
 export default {
     darkMode: ['class'],
@@ -15,7 +17,7 @@ export default {
 			border: '#000',
 	  
 			// dark mode
-			darkBg: '#374151',
+			darkBg: '#1D1F27',
 			darkText: '#eeefe9',
 			darkBorder: '#000',
 			secondaryBlack: '#1b1b1b', // opposite of plain white, not used pitch black because borders and box-shadows are that color 
@@ -36,6 +38,9 @@ export default {
 		  fontWeight: {
 			base: '500',
 			heading: '700',
+		  },
+		  fontFamily: {
+			sans: ['Archivo Variable', ...defaultTheme.fontFamily.sans],
 		  },
 		},
 	  },
