@@ -16,7 +16,7 @@ const Nav = () => {
   ];
 
   return (
-    <nav className="border-b-2 border-border bg-white dark:bg-darkBg">
+    <nav className="border-b-2 border-border bg-white dark:bg-pink-400">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="hidden sm:block w-10"></div> {/* Spacer for small screens */}
@@ -25,7 +25,7 @@ const Nav = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className={`text-text dark:text-darkText hover:underline px-2 sm:px-3 py-2 transition-all duration-200 whitespace-nowrap ${
+                className={`text-text hover:underline px-2 sm:px-3 py-2 transition-all duration-200 whitespace-nowrap ${
                   currentPath === item.href ? 'font-bold' : ''
                 }`}
               >
