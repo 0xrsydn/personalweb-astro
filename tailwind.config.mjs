@@ -41,7 +41,6 @@ export default {
 		  },
 		  fontFamily: {
 			sans: ['Archivo Variable', ...defaultTheme.fontFamily.sans],
-			header: ['Lexend Mega Variable', ...defaultTheme.fontFamily.sans],
 		  },
 		},
 	  },
