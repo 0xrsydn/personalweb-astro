@@ -1,7 +1,21 @@
 ---
-// Optional: Frontmatter for metadata
-title: 'About Us'
+import MyLayout from '../layouts/MyLayout.astro';
 ---
 
-<h1>Welcome to Our About Page</h1>
-<p>This is where you can learn more about us...</p>
+<MyLayout title="About Me">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-4xl font-bold mb-6">About Me</h1>
+    <p class="mb-4">
+      Hi there! I'm Rasyidan Akbar F, a Biomedical Engineering graduate from Gadjah Mada University. Currently, I'm working as a Data Engineer at Stealth Agency, where I leverage my skills to transform complex data into actionable insights.
+    </p>
+    <p class="mb-4">
+      My journey in the tech world began during my internship as an AI Engineer at Kalbe Farma, where I developed a passion for applying cutting-edge technologies to solve real-world problems. This experience solidified my decision to pursue a career at the intersection of data and technology.
+    </p>
+    <p class="mb-4">
+      When I'm not immersed in data and code, you can find me [insert hobbies or interests here]. I'm always eager to learn and grow, both professionally and personally.
+    </p>
+    <p>
+      Feel free to connect with me on social media or check out my projects to learn more about my work and interests!
+    </p>
+  </div>
+</MyLayout>
