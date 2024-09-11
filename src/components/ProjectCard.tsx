@@ -27,7 +27,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </CardContent>
       {project.link && (
         <CardFooter className="flex justify-start">
-          <Button variant="outline" asChild className="px-2 py-1 text-sm hover:underline">
+          <Button variant="link" asChild className="px-2 py-1 text-sm">
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               View Project <ExternalLink className="ml-1 h-3 w-3" />
             </a>
