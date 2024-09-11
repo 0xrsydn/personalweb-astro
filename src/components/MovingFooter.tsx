@@ -2,6 +2,12 @@
 
 import { useState, useEffect, useRef } from 'react'
 
+interface MovingFooterProps {
+  text?: string;
+  speed?: number;
+  fontSize?: number;
+}
+
 export default function MovingFooter({ text = "©2024 All rights reserved. Powered by 0xrsydn.", speed = 50, fontSize = 16 }: MovingFooterProps) {
   const [position, setPosition] = useState(0)
   const containerRef = useRef<HTMLDivElement>(null)
