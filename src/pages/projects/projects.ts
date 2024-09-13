@@ -1,28 +1,34 @@
 export interface Project {
   title: string;
   description: string;
-  technologies: string[];
+  tech: string[];
   link?: string;
   image?: string;
 }
 
 export const projects: Project[] = [
   {
-    title: "Data Pipeline Optimization",
-    description: "Developed a scalable ETL pipeline using Apache Airflow and AWS services, improving data processing efficiency by 40%.",
-    technologies: ["Python", "Apache Airflow", "AWS", "SQL"],
-    link: "https://github.com/yourusername/data-pipeline-project"
+    title: "Cover Letter Generator",
+    description: "Make cover letters utilizing LLM for job applications based on your ATS resume and job description. Deployed on Hugging Face Space.",
+    tech: ["Python", "LangChain", "Gradio"],
+    link: "https://huggingface.co/spaces/0xrsydn/cover-letter-gen-v2"
   },
   {
-    title: "AI-Powered Medical Image Analysis",
-    description: "Created a deep learning model for automated diagnosis of lung diseases from X-ray images, achieving 95% accuracy.",
-    technologies: ["Python", "TensorFlow", "OpenCV", "Docker"],
-    link: "https://github.com/yourusername/medical-image-ai"
+    title: "Solana Ore Miner",
+    description: "Shell script of $ORE mining, PoW coin similar to Bitcoin on Solana blockchain.",
+    tech: ["Shell"],
+    link: "https://github.com/0xrsydn/ore-miner"
   },
   {
-    title: "Real-time Analytics Dashboard",
-    description: "Built a responsive web dashboard for real-time data visualization using React and D3.js, integrated with a backend API.",
-    technologies: ["React", "D3.js", "Node.js", "Express", "MongoDB"],
-    link: "https://github.com/yourusername/analytics-dashboard"
+    title: "Llava-1.5-Liveness-7b : A Vision Language Model for Liveness Detection",
+    description: "Fine-tuned Llava-1.5-7b base model for liveness detection, utilizing GPT-4 for dataset augmentation. Developed for the Bank Indonesia Hackathon (team project).",
+    tech: ["Python", "Bitsandbytes", "Transformers", "Gradio"],
+    link: "https://github.com/MuhFaridanSutariya/llava-1.5-liveness-7b"
+  },
+  {
+    title: "Magic Resume: Job Matching Platform Powered by LLM",
+    description: "Developed a job matching app as hackathon team project (my part was frontend) leveraging Llama3 for resume parsing and job description understanding. This platform aims to streamline the job application process by matching candidates with suitable job opportunities.",
+    tech: ["NextJS", "Tailwind CSS", "React"],
+    link: "https://github.com/0xrsydn/magicresume-ui"
   }
 ];

@@ -18,7 +18,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </CardHeader>
       <CardContent>
         <div className="flex flex-wrap gap-2">
-          {project.technologies.map((tech, index) => (
+          {project.tech.map((tech, index) => (
             <Badge key={index} variant="default">
               {tech}
             </Badge>
@@ -27,7 +27,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </CardContent>
       {project.link && (
         <CardFooter className="flex justify-start">
-          <Button variant="link" asChild className="px-2 py-1 text-sm">
+          <Button variant="link" asChild className="px-2 py-1 text-sm text-black dark:text-black hover:underline">
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               View Project <ExternalLink className="ml-1 h-3 w-3" />
             </a>
