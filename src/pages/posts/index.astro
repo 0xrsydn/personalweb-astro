@@ -7,14 +7,16 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <MyLayout title="Posts | Rasyidan Akbar F.">
-  <h1 class="text-3xl font-black">Posts</h1>
-  <ul>
-    {posts.map((post) => (
-      <li>
-        <a href={`/posts/${post.slug}/`}>
-          {post.data.title} - {post.data.pubDate.toDateString()}
-        </a>
-      </li>
-    ))}
-  </ul>
+  <div class="flex flex-col items-start justify-start h-screen pt-[12vh] pl-8">
+    <h1 class="text-3xl font-black mb-4">Posts</h1>
+    <ul class="space-y-2">
+      {posts.map((post) => (
+        <li>
+          <a href={`/posts/${post.slug}/`} class="hover:underline">
+            {post.data.title} - {post.data.pubDate.toDateString()}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
 </MyLayout>
