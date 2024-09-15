@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import MyLayout from '../../layouts/MyLayout.astro';
+import { Badge } from '@/components/ui/badge';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<MyLayout title={post.data.title}>
+  <article class="prose lg:prose-xl mx-auto px-4 py-8 blog-content">
+    <h1 class="text-3xl font-bold">{post.data.title}</h1>
+    <p class="publish-date">Published on: {post.data.pubDate.toDateString()}</p>
+    <div class="tags-container">
+      {post.data.tags.map((tag: string) => (
+        <Badge variant="default">{tag}</Badge>
+      ))}
+    </div>
+    <Content />
+  </article>
+</MyLayout>
+
+<style>
+  .blog-content {
+    max-width: 800px; /* Adjust this value as needed */
+    margin: 0 auto;
+  }
+
+  .blog-content :global(p) {
+    margin-bottom: 1.5em; /* Increase space between paragraphs */
+    line-height: 1.8; /* Increase line height for better readability */
+  }
+
+  .publish-date {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1em;
+  }
+
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-bottom: 2em;
+  }
+</style>

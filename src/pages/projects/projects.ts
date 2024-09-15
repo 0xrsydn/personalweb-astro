@@ -22,7 +22,7 @@ export const projects: Project[] = [
   {
     title: "Llava-1.5-Liveness-7b : A Vision Language Model for Liveness Detection",
     description: "Fine-tuned Llava-1.5-7b base model for liveness detection, utilizing GPT-4 for dataset augmentation. Developed for the Bank Indonesia Hackathon (team project).",
-    tech: ["Python", "Bitsandbytes", "Transformers", "Gradio"],
+    tech: ["Python", "Transformers", "Gradio"],
     link: "https://github.com/MuhFaridanSutariya/llava-1.5-liveness-7b"
   },
   {
