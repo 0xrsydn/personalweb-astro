@@ -30,5 +30,11 @@ export const projects: Project[] = [
     description: "Developed a job matching app as hackathon team project (my part was frontend) leveraging Llama3 for resume parsing and job description understanding. This platform aims to streamline the job application process by matching candidates with suitable job opportunities.",
     tech: ["NextJS", "Tailwind CSS", "React"],
     link: "https://github.com/0xrsydn/magicresume-ui"
+  },
+  {
+    title: "Smart Parking System based on IoT for Parking Slot Detection",
+    description: "Led IoT smart parking system using ESP32 and Ultrasonic Sensor for detecting parking slot occupancy and displaying the availability on Web Dashboard. This project was part of a team project for Capstone Design Exam.",
+    tech: ["ESP32", "Raspberry Pi", "MQTT", "HTML", "CSS", "JavaScript"],
+    link: "https://youtu.be/4_dHtjhiKQ4?si=1NlEfvyCM84TnA5H"
   }
 ];
