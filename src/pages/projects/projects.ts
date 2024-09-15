@@ -14,14 +14,8 @@ export const projects: Project[] = [
     link: "https://huggingface.co/spaces/0xrsydn/cover-letter-gen-v2"
   },
   {
-    title: "Solana Ore Miner",
-    description: "Shell script of $ORE mining, PoW coin similar to Bitcoin on Solana blockchain.",
-    tech: ["Shell"],
-    link: "https://github.com/0xrsydn/ore-miner"
-  },
-  {
     title: "Llava-1.5-Liveness-7b : A Vision Language Model for Liveness Detection",
-    description: "Fine-tuned Llava-1.5-7b base model for liveness detection, utilizing GPT-4 for dataset augmentation. Developed for the Bank Indonesia Hackathon (team project).",
+    description: "Fine-tuned Llava-1.5-7b base model for liveness detection, utilizing GPT-4 for dataset augmentation. Developed as team project for the Bank Indonesia Hackathon.",
     tech: ["Python", "Transformers", "Gradio"],
     link: "https://github.com/MuhFaridanSutariya/llava-1.5-liveness-7b"
   },
@@ -32,9 +26,15 @@ export const projects: Project[] = [
     link: "https://github.com/0xrsydn/magicresume-ui"
   },
   {
-    title: "Smart Parking System based on IoT for Parking Slot Detection",
-    description: "Led IoT smart parking system using ESP32 and Ultrasonic Sensor for detecting parking slot occupancy and displaying the availability on Web Dashboard. This project was part of a team project for Capstone Design Exam.",
+    title: "Smart Parking System based on IoT for Parking Slot Availability Detection",
+    description: "Led IoT smart parking system using ESP32 and Ultrasonic Sensor for detecting parking slot occupancy and displaying the availability on Web Dashboard. This project was part of a team project for DTETI Capstone Design Expo.",
     tech: ["ESP32", "Raspberry Pi", "MQTT", "HTML", "CSS", "JavaScript"],
     link: "https://youtu.be/4_dHtjhiKQ4?si=1NlEfvyCM84TnA5H"
+  },
+  {
+    title: "Solana Ore Miner",
+    description: "Shell script of $ORE mining, PoW coin similar to Bitcoin on Solana blockchain.",
+    tech: ["Shell"],
+    link: "https://github.com/0xrsydn/ore-miner"
   }
 ];
