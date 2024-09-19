@@ -6,17 +6,16 @@ export function ModeToggle() {
   const [theme, setTheme] = React.useState<"light" | "dark">("light")
 
   React.useEffect(() => {
-    const isDarkMode = document.documentElement.classList.contains("dark")
-    setTheme(isDarkMode ? "dark" : "light")
+    const storedTheme = localStorage.getItem("theme") || "light"
+    setTheme(storedTheme as "light" | "dark")
+    document.documentElement.classList.toggle("dark", storedTheme === "dark")
   }, [])
 
-  React.useEffect(() => {
-    const isDark = theme === "dark"
-    document.documentElement.classList[isDark ? "add" : "remove"]("dark")
-  }, [theme])
-
   const toggleTheme = () => {
-    setTheme(prevTheme => prevTheme === "light" ? "dark" : "light")
+    const newTheme = theme === "light" ? "dark" : "light"
+    setTheme(newTheme)
+    localStorage.setItem("theme", newTheme)
+    document.documentElement.classList.toggle("dark", newTheme === "dark")
   }
 
   return (
