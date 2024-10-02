@@ -14,6 +14,12 @@ export const projects: Project[] = [
     link: "https://huggingface.co/spaces/0xrsydn/cover-letter-gen-v2"
   },
   {
+    title: "CV Roast",
+    description: "CV roasting app to make fun of your CV or your friends' CV by LLM. Developed with my friend as fun project. I was responsible for backend development. I wrap LLM in FastAPI as roast output.",
+    tech: ["Python", "FastAPI", "NextJS", "Tailwind CSS", "React"],
+    link: "https://cv-roast.my.id/"
+  },
+  {
     title: "Llava-1.5-Liveness-7b : A Vision Language Model for Liveness Detection",
     description: "Fine-tuned Llava-1.5-7b base model for liveness detection, utilizing GPT-4 for dataset augmentation. Developed as team project for the Bank Indonesia Hackathon.",
     tech: ["Python", "Transformers", "Gradio"],
