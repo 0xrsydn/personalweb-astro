@@ -1,3 +1,4 @@
+import type { FunctionComponent } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 interface AboutPageProps {
@@ -24,7 +25,7 @@ interface AboutPageProps {
   };
 }
 
-export const AboutPage = ({ data }: AboutPageProps) => {
+export const AboutPage: FunctionComponent<AboutPageProps> = ({ data }) => {
   const { professionalSummary, skills, careerMilestones } = data;
 
   return (
@@ -88,4 +89,13 @@ export const AboutPage = ({ data }: AboutPageProps) => {
       </Card>
     </div>
   )
+}
+
+// Add this type declaration for Astro
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'about-page': AboutPageProps;
+    }
+  }
 }

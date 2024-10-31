@@ -1,7 +1,12 @@
 ---
 import { AboutPage } from '@/components/AboutPage';
 import { aboutData } from './about';
-import MyLayout from '@/layouts/MyLayout.astro';  // Updated import
+import MyLayout from '@/layouts/MyLayout.astro';
+
+// Explicitly type the props
+type Props = {
+  data: typeof aboutData;
+}
 ---
 
 <MyLayout title="About | Rasyidan Akbar F.">
