@@ -27,10 +27,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </CardContent>
       {project.link && (
         <CardFooter className="flex justify-start">
-          <Button variant="neo" className="group">
-            View Project
-            <ExternalLink className="ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
-          </Button>
+          <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <Button variant="neo" className="group">
+              View Project
+              <ExternalLink className="ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
+            </Button>
+          </a>
         </CardFooter>
       )}
     </Card>
