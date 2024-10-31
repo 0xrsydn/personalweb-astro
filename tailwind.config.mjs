@@ -41,6 +41,7 @@ export default {
 		  },
 		  fontFamily: {
 			sans: ['Archivo Variable', ...defaultTheme.fontFamily.sans],
+			body: ['Inter', ...defaultTheme.fontFamily.sans],
 		  },
 		},
 	  },
