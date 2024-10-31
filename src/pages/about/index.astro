@@ -1,11 +1,9 @@
 ---
-import MyLayout from '../../layouts/MyLayout.astro';
-import AboutPage from '../../components/AboutPage';
+import { AboutPage } from '@/components/AboutPage';
 import { aboutData } from './about';
+import MyLayout from '@/layouts/MyLayout.astro';  // Updated import
 ---
 
-<MyLayout title="About Me | Rasyidan Akbar F">
-  <div class="pt-24">
-    <AboutPage client:load data={aboutData} />
-  </div>
+<MyLayout title="About | Rasyidan Akbar F.">
+  <AboutPage client:load data={aboutData} />
 </MyLayout>

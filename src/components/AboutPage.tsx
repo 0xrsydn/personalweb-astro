@@ -1,8 +1,31 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { aboutData } from "@/pages/about/about"
 
-export default function AboutPage() {
-  const { professionalSummary, skills, careerMilestones } = aboutData;
+interface AboutPageProps {
+  data: {
+    professionalSummary: {
+      title: string;
+      description: string;
+    };
+    skills: {
+      title: string;
+      categories: {
+        title: string;
+        items: string[];
+      }[];
+    };
+    careerMilestones: {
+      title: string;
+      experiences: {
+        title: string;
+        period: string;
+        description: string;
+      }[];
+    };
+  };
+}
+
+export const AboutPage = ({ data }: AboutPageProps) => {
+  const { professionalSummary, skills, careerMilestones } = data;
 
   return (
     <div className="max-w-4xl mx-auto space-y-8 p-4">
