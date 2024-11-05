@@ -31,7 +31,7 @@ export const AboutPage: FunctionComponent<AboutPageProps> = ({ data }) => {
   return (
     <div className="max-w-4xl mx-auto space-y-8 p-4">
       {/* Profile Section */}
-      <Card className="bg-[#FF6E6C] w-full shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 dark:shadow-[8px_8px_0px_0px_rgba(244,114,182,1)] dark:hover:shadow-[1px_1px_0px_0px_rgba(244,114,182,1)]">
+      <Card className="bg-[#FF6E6C] w-full shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 dark:shadow-[8px_8px_0px_0px_rgba(244,114,182,1)] dark:hover:shadow-[1px_1px_0px_0px_rgba(244,114,182,1)] dark:border-main">
         <CardHeader>
           <CardTitle className="text-3xl font-black uppercase">{professionalSummary.title}</CardTitle>
         </CardHeader>
@@ -43,7 +43,7 @@ export const AboutPage: FunctionComponent<AboutPageProps> = ({ data }) => {
       </Card>
 
       {/* Skills Section */}
-      <Card className="bg-[#4ECDC4] w-full shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 dark:shadow-[8px_8px_0px_0px_rgba(244,114,182,1)] dark:hover:shadow-[1px_1px_0px_0px_rgba(244,114,182,1)]">
+      <Card className="bg-[#4ECDC4] w-full shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 dark:shadow-[8px_8px_0px_0px_rgba(244,114,182,1)] dark:hover:shadow-[1px_1px_0px_0px_rgba(244,114,182,1)] dark:border-main">
         <CardHeader>
           <CardTitle className="text-3xl font-black uppercase">{skills.title}</CardTitle>
         </CardHeader>
@@ -69,7 +69,7 @@ export const AboutPage: FunctionComponent<AboutPageProps> = ({ data }) => {
       </Card>
 
       {/* Experience Section */}
-      <Card className="bg-[#FF6E6C] w-full shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 dark:shadow-[8px_8px_0px_0px_rgba(244,114,182,1)] dark:hover:shadow-[1px_1px_0px_0px_rgba(244,114,182,1)]">
+      <Card className="bg-[#FF6E6C] w-full shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 dark:shadow-[8px_8px_0px_0px_rgba(244,114,182,1)] dark:hover:shadow-[1px_1px_0px_0px_rgba(244,114,182,1)] dark:border-main">
         <CardHeader>
           <CardTitle className="text-3xl font-black uppercase">{careerMilestones.title}</CardTitle>
         </CardHeader>

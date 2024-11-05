@@ -11,15 +11,15 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card className="w-full shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 dark:shadow-[8px_8px_0px_0px_rgba(244,114,182,1)] dark:hover:shadow-[1px_1px_0px_0px_rgba(244,114,182,1)]">
+    <Card className="w-full dark:border-main dark:bg-black dark:text-white dark:font-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 dark:shadow-[8px_8px_0px_0px_rgba(244,114,182,1)] dark:hover:shadow-[1px_1px_0px_0px_rgba(244,114,182,1)]">
       <CardHeader>
         <CardTitle>{project.title}</CardTitle>
-        <CardDescription className="font-body">{project.description}</CardDescription>
+        <CardDescription className="font-body dark:text-white">{project.description}</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="flex flex-wrap gap-2">
           {project.tech.map((tech, index) => (
-            <Badge key={index} variant="neutral">
+            <Badge key={index} variant="neutral" className="dark:bg-pink-400 dark:text-black">
               {tech}
             </Badge>
           ))}
