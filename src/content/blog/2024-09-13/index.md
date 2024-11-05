@@ -6,10 +6,10 @@ description: "Rewriting my personal website from React to Astro."
 tags: ["coding", "design"]
 ---
 
-As this is my first post, I want to tell you that I remake & redesign my personal website from Vite + React with similar project structure as Astro into Astro with Shadcn UI (React) components library and Tailwind CSS.
+As this is my first post, I want to share that I've been rewriting and redesigning my personal website. I've transitioned from using Vite + React with a similar project structure to Astro, incorporating Shadcn UI (React) components library and Tailwind CSS.
 
-I also redesign my personal website into neobrutalism UI style as i love this style even though not everyone like it (personal preference). Now i migrate my website techstack into Astro rather than Vite + React because Astro match my preference to build my website rather than React through Vite. At first, i want to remake it using NextJS but i think Astro is a better fit for me at this moment as more content-friendly framework and suitable for personal website building.
+I have also redesigned my personal website with a *neobrutalism* style. I love this style, even though it might not be everyone's cup of tea (it's a personal preference). I have migrated my website's tech stack from Vite + React to Astro because Astro better aligns with my preferences for building my website. Initially, I considered remaking it using NextJS, but I believe Astro is a better fit for me at this moment as it's a more content-friendly framework and more suitable for building personal websites.
 
-I feel like i over-engineer my own personal website by using specific ui design and adding stuff that not really need to be there (actually). But as I'm having fun myself, i will keep updating my personal website code and make my code and web clearer in the future.
+I feel like I might be over-engineering my own personal website by using a specific UI design and adding features that aren't strictly necessary. However, since I'm enjoying the process, I plan to continue updating my personal website's code and making both my code and the website clearer in the future.
 
-Thats all for my first post. This blog page still under development as i will add more stuff or reengineer it again. Maybe this is it for my first post.
+That's all for my first post. This blog page is still under development, as I will be adding more content and possibly re-engineering it again. I suppose this concludes my first post.
