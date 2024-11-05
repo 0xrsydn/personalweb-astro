@@ -1,9 +1,9 @@
 ---
-title: "Personal Website Redesign"
-slug: "personal-website-remake"
+title: "Revamping My Personal Website: From React to Astro"
+slug: "personal-website-revamp-astro"
 pubDate: 2024-09-13
-description: "Personal website remake from Vite + React into Astro"
-tags: ["frontend", "blog", "design"]
+description: "Rewriting my personal website from React to Astro."
+tags: ["coding", "design"]
 ---
 
 As this is my first post, I want to tell you that I remake & redesign my personal website from Vite + React with similar project structure as Astro into Astro with Shadcn UI (React) components library and Tailwind CSS.

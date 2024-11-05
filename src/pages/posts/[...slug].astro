@@ -16,40 +16,36 @@ const { Content } = await post.render();
 ---
 
 <MyLayout title={post.data.title}>
-  <article class="prose lg:prose-xl mx-auto px-4 py-8 blog-content">
-    <h1 class="text-3xl font-bold">{post.data.title}</h1>
-    <p class="publish-date">Published on: {post.data.pubDate.toDateString()}</p>
-    <div class="tags-container">
-      {post.data.tags.map((tag: string) => (
-        <Badge variant="default">{tag}</Badge>
-      ))}
+  <article class="max-w-3xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <h1 class="text-4xl font-black mb-4 dark:text-white font-sans">{post.data.title}</h1>
+      <time class="text-sm text-gray-600 dark:text-gray-400 block mb-4">
+        {new Date(post.data.pubDate).toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        })}
+      </time>
+      <div class="flex flex-wrap gap-2 mb-4">
+        {post.data.tags.map((tag: string) => (
+          <Badge variant="default" className="dark:bg-pink-400 dark:text-black">
+            {tag}
+          </Badge>
+        ))}
+      </div>
+    </header>
+
+    <div class="prose prose-lg dark:prose-invert max-w-none 
+      prose-headings:font-black
+      prose-h1:text-3xl
+      prose-h2:text-2xl
+      prose-h3:text-xl
+      prose-p:text-gray-700 dark:prose-p:text-gray-300
+      prose-a:text-pink-500 hover:prose-a:text-pink-600
+      prose-code:text-pink-500 dark:prose-code:text-pink-400
+      prose-code:before:content-none prose-code:after:content-none
+      font-body">
+      <Content />
     </div>
-    <Content />
   </article>
 </MyLayout>
-
-<style>
-  .blog-content {
-    font-family: 'Inter', sans-serif;
-    max-width: 800px; /* Adjust this value as needed */
-    margin: 0 auto;
-  }
-
-  .blog-content :global(p) {
-    margin-bottom: 1.5em; /* Increase space between paragraphs */
-    line-height: 1.8; /* Increase line height for better readability */
-  }
-
-  .publish-date {
-    font-style: italic;
-    color: #666;
-    margin-bottom: 1em;
-  }
-
-  .tags-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em;
-    margin-bottom: 2em;
-  }
-</style>

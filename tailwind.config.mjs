@@ -43,7 +43,26 @@ export default {
 			sans: ['Archivo Variable', ...defaultTheme.fontFamily.sans],
 			body: ['Inter', ...defaultTheme.fontFamily.sans],
 		  },
+		  typography: {
+			DEFAULT: {
+			  css: {
+				'code::before': {
+				  content: '""'
+				},
+				'code::after': {
+				  content: '""'
+				},
+				code: {
+				  fontWeight: '400',
+				  backgroundColor: '#f4f4f4',
+				  padding: '0.2em 0.4em',
+				  borderRadius: '3px',
+				  fontSize: '0.85em'
+				}
+			  }
+			}
+		  }
 		},
 	  },
-	plugins: [require("tailwindcss-animate")],
+	plugins: [require("tailwindcss-animate"), require('@tailwindcss/typography')],
 }

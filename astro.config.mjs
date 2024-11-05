@@ -13,5 +13,8 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }), react(), sitemap()
-  ]
+  ],
+  assets: {
+    contentImages: true  // Enable content collection image support
+  }
 });
