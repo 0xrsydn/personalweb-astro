@@ -7,7 +7,10 @@ const posts = await getCollection('blog');
 posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<MyLayout title="Posts | Rasyidan Akbar F.">
+<MyLayout 
+  title="Posts | Rasyidan Akbar F."
+  description="A collection of my notes and posts."
+>
   <div class="min-h-screen p-6 md:p-12">
     <div class="max-w-4xl mx-auto">
       <h1 class="text-3xl md:text-5xl font-black mb-8">Posts</h1>
