@@ -18,7 +18,7 @@ const buttonVariants = cva(
           'bg-white dark:bg-darkBg dark:text-darkText border-2 border-border dark:border-darkBorder shadow-light dark:shadow-dark hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none',
         reverse:
           'bg-main border-2 border-border dark:border-darkBorder hover:translate-x-reverseBoxShadowX hover:translate-y-reverseBoxShadowY hover:shadow-light dark:hover:shadow-dark',
-        neo: 'text-lg bg-black text-white py-3 px-6 rounded-none shadow-[4px_4px_0px_0px_rgba(236,72,153,1)] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[1px_1px_0px_0px_rgba(236,72,153,1)] dark:bg-white dark:text-black dark:shadow-[4px_4px_0px_0px_rgba(236,72,153,1)]',
+        neo: 'text-lg bg-black text-white py-3 px-6 rounded-none shadow-brutal-orange hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-brutal-sm-orange dark:bg-white dark:text-black dark:shadow-brutal-orange',
       },
       size: {
         default: 'h-10 px-4 py-2',

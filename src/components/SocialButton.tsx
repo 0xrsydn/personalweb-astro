@@ -6,7 +6,7 @@ export default function Component() {
     <div className="flex flex-col gap-4 sm:flex-row">
       <Button
         variant="default"
-        className="w-full sm:w-auto bg-main dark:bg-black dark:hover:bg-gray-900 border-2 text-black dark:text-white dark:shadow-pink-400 dark:border-main"
+        className="w-full sm:w-auto bg-main dark:bg-black border-2 text-black dark:text-white dark:shadow-main dark:border-white"
         asChild
       >
         <a href="https://github.com/0xrsydn" target="_blank" rel="noopener noreferrer" className="gap-2">
@@ -16,7 +16,7 @@ export default function Component() {
       </Button>
       <Button
         variant="default"
-        className="w-full sm:w-auto bg-main dark:bg-black dark:hover:bg-gray-900 border-2 text-black dark:text-white dark:shadow-pink-400 dark:border-main"
+        className="w-full sm:w-auto bg-main dark:bg-black border-2 text-black dark:text-white dark:shadow-main dark:border-white"
         asChild
       >
         <a href="https://linkedin.com/in/rsydn" target="_blank" rel="noopener noreferrer" className="gap-2">
@@ -26,7 +26,7 @@ export default function Component() {
       </Button>
       <Button
         variant="default"
-        className="w-full sm:w-auto bg-main dark:bg-black dark:hover:bg-gray-900 border-2 text-black dark:text-white dark:shadow-pink-400 dark:border-main"
+        className="w-full sm:w-auto bg-main dark:bg-black border-2 text-black dark:text-white dark:shadow-main dark:border-white"
         asChild
       >
         <a href="mailto:rasyidanakbar@mail.ugm.ac.id" className="gap-2">
@@ -36,7 +36,7 @@ export default function Component() {
       </Button>
       <Button
         variant="default"
-        className="w-full sm:w-auto bg-main dark:bg-black dark:hover:bg-gray-900 border-2 text-black dark:text-white dark:shadow-pink-400 dark:border-main"
+        className="w-full sm:w-auto bg-main dark:bg-black border-2 text-black dark:text-white dark:shadow-main dark:border-white"
         asChild
       >
         <a href="https://twitter.com/0xrsydn" target="_blank" rel="noopener noreferrer" className="gap-2">

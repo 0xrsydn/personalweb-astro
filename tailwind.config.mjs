@@ -7,17 +7,20 @@ export default {
 	theme: {
 		extend: {
 		  colors: {
-			main: '#FFDC58',
+			// main: '#FFDC58',
+			main: '#FF7940',
 			mainAccent: '#ffc800', // not needed for shadcn components
 			overlay: 'rgba(0,0,0,0.8)', // background color overlay for alert dialogs, modals, etc.
 	  
 			// light mode
-			bg: '#FEF2E8',
+			// bg: '#FEF2E8',
+			bg: '#F4F6F8',
 			text: '#000',
 			border: '#000',
 	  
 			// dark mode
-			darkBg: '#1D1F27',
+			// darkBg: '#1D1F27',
+			darkBg: '#1A1D21',
 			darkText: '#eeefe9',
 			darkBorder: '#000',
 			secondaryBlack: '#1b1b1b', // opposite of plain white, not used pitch black because borders and box-shadows are that color 
@@ -28,6 +31,11 @@ export default {
 		  boxShadow: {
 			light: '4px 4px 0px 0px #000',
 			dark: '4px 4px 0px 0px #000',
+			// New brutal shadows
+			'brutal': '4px 4px 0px 0px rgba(0,0,0,1)',
+			'brutal-sm': '1px 1px 0px 0px rgba(0,0,0,1)', 
+			'brutal-orange': '4px 4px 0px 0px rgba(255,121,64,1)',
+			'brutal-sm-orange': '1px 1px 0px 0px rgba(255,121,64,1)'
 		  },
 		  translate: {
 			boxShadowX: '4px',

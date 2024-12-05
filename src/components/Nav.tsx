@@ -16,7 +16,7 @@ const Nav = () => {
   ];
 
   return (
-    <nav className="border-b-2 border-border bg-white dark:bg-pink-400">
+    <nav className="border-b-2 border-border bg-white dark:bg-main">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="hidden sm:block w-10"></div> {/* Spacer for small screens */}

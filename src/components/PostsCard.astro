@@ -18,9 +18,9 @@ const { posts } = Astro.props;
 
 <div class="space-y-8">
   {posts.map((post) => (
-    <article class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_black] p-6 md:p-8 transform hover:-translate-y-1 transition-transform duration-200 dark:bg-black dark:border-main dark:shadow-[8px_8px_0px_0px_rgba(244,114,182,1)]">
+    <article class="bg-white border-4 border-black shadow-[8px_8px_0px_0px_black] p-6 md:p-8 transform hover:-translate-y-1 transition-transform duration-200 dark:bg-black dark:border-white dark:shadow-[8px_8px_0px_0px_rgba(255,121,64,1)]">
       <div class="space-y-4">
-        <time class="block text-sm font-bold uppercase tracking-wide text-pink-600 dark:text-pink-400">
+        <time class="block text-sm font-bold uppercase tracking-wide text-orange-600 dark:text-orange-400">
           {new Date(post.data.pubDate).toLocaleDateString('en-US', {
             weekday: 'short',
             year: 'numeric',
@@ -39,7 +39,7 @@ const { posts } = Astro.props;
 
         <a 
           href={`/posts/${post.slug}`}
-          class="group inline-flex items-center bg-black text-white text-lg py-3 px-6 rounded-none transition-all duration-200 shadow-[4px_4px_0px_0px_rgba(236,72,153,1)] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[1px_1px_0px_0px_rgba(236,72,153,1)] dark:bg-white dark:text-black dark:shadow-[4px_4px_0px_0px_rgba(236,72,153,1)]"
+          class="group inline-flex items-center bg-black text-white text-lg py-3 px-6 rounded-none transition-all duration-200 shadow-brutal-orange hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-brutal-sm-orange dark:bg-white dark:text-black dark:shadow-brutal-orange"
         >
           Read More
           <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />

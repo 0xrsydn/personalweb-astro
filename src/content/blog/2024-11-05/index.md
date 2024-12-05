@@ -6,6 +6,16 @@ description: "An in-depth look at my full-stack app development setup powered by
 tags: ["ai", "coding", "tools"]
 ---
 
+<div class="flex justify-center">
+  <img src="/images/blog/lefunnychatgpt.jpeg" alt="A humorous meme about copying and pasting code from ChatGPT into development projects" width="70%">
+</div>
+
+Nowadays, you can build apps without knowing how to code even not writing single line of code with AI tools. A lot of people with no coding/programming background already shipped their apps (SaaS) with help of AI tools without writing a single line of code.
+
+*"But, there would be a lot of errors and bugs, and the app would'nt work anyway especially on production."*
+
+Well you can just debug and fix the errors, ask LLM to fix the code, improve the code, explain the code, and repeat the process until it's done.
+
 Current AI tools I use for prototyping and production-grade level app development (yep, full brainrot setup):
 
 - [Cursor](https://www.cursor.com/) as the default IDE for AI-pair programming
