@@ -28,7 +28,7 @@ const { Content } = await post.render();
       </time>
       <div class="flex flex-wrap gap-2 mb-4">
         {post.data.tags.map((tag: string) => (
-          <Badge variant="default" className="dark:bg-pink-400 dark:text-black">
+          <Badge variant="default" className="dark:bg-main dark:text-black">
             {tag}
           </Badge>
         ))}
@@ -40,10 +40,14 @@ const { Content } = await post.render();
       prose-h1:text-3xl
       prose-h2:text-2xl
       prose-h3:text-xl
-      prose-p:text-gray-700 dark:prose-p:text-gray-300
-      prose-a:text-pink-500 hover:prose-a:text-pink-600
-      prose-code:text-pink-500 dark:prose-code:text-pink-400
+      prose-p:text-gray-800 dark:prose-p:text-gray-200
+      prose-a:text-[#FF7940] hover:prose-a:text-[#FF6B2B]
+      prose-code:text-[#FF7940] dark:prose-code:text-[#FF9666]
+      prose-code:bg-gray-100 dark:prose-code:bg-gray-800
+      prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md
       prose-code:before:content-none prose-code:after:content-none
+      prose-strong:text-gray-800 dark:prose-strong:text-gray-200
+      prose-blockquote:border-[#FF7940] dark:prose-blockquote:border-[#FF9666]
       font-body">
       <Content />
     </div>
