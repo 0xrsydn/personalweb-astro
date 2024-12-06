@@ -30,33 +30,43 @@ export const AboutPage: FunctionComponent<AboutPageProps> = ({ data }) => {
 
   return (
     <div className="max-w-4xl mx-auto space-y-8 p-4">
-      {/* Profile Section */}
-      <Card className="bg-[#FF6E6C] w-full shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 dark:shadow-[8px_8px_0px_0px_rgba(244,114,182,1)] dark:hover:shadow-[1px_1px_0px_0px_rgba(244,114,182,1)] dark:border-main">
+      {/* Professional Summary Card */}
+      <Card className="w-full bg-white dark:bg-darkBg border-2 dark:border-white
+        shadow-brutal hover:shadow-brutal-sm 
+        hover:translate-x-1 hover:translate-y-1 
+        transition-all duration-200
+        dark:shadow-brutal-orange dark:hover:shadow-brutal-sm-orange">
         <CardHeader>
-          <CardTitle className="text-3xl font-black uppercase">{professionalSummary.title}</CardTitle>
+          <CardTitle className="text-3xl font-black uppercase dark:text-white">{professionalSummary.title}</CardTitle>
         </CardHeader>
         <CardContent>
-          <CardDescription className="text-lg font-body font-medium text-black">
+          <CardDescription className="text-lg font-body font-medium text-gray-800 dark:text-gray-200">
             {professionalSummary.description}
           </CardDescription>
         </CardContent>
       </Card>
 
-      {/* Skills Section */}
-      <Card className="bg-[#4ECDC4] w-full shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 dark:shadow-[8px_8px_0px_0px_rgba(244,114,182,1)] dark:hover:shadow-[1px_1px_0px_0px_rgba(244,114,182,1)] dark:border-main">
+      {/* Skills Card */}
+      <Card className="w-full bg-white dark:bg-darkBg border-2 dark:border-white
+        shadow-brutal hover:shadow-brutal-sm 
+        hover:translate-x-1 hover:translate-y-1 
+        transition-all duration-200
+        dark:shadow-brutal-orange dark:hover:shadow-brutal-sm-orange">
         <CardHeader>
-          <CardTitle className="text-3xl font-black uppercase">{skills.title}</CardTitle>
+          <CardTitle className="text-3xl font-black uppercase dark:text-white">{skills.title}</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-body">
             {skills.categories.map((category) => (
               <div key={category.title} className="space-y-2">
-                <h3 className="text-xl font-bold uppercase">{category.title}</h3>
+                <h3 className="text-xl font-bold uppercase dark:text-white">{category.title}</h3>
                 <div className="flex flex-wrap gap-2">
                   {category.items.map((item) => (
                     <span
                       key={item}
-                      className="inline-block border-2 border-black px-3 py-1 bg-main font-bold"
+                      className="inline-block border-2 border-border dark:border-white 
+                        px-3 py-1 bg-[#F4F6F8] dark:bg-darkBg font-bold dark:text-white
+                        hover:bg-main dark:hover:bg-main dark:hover:text-black transition-colors"
                     >
                       {item}
                     </span>
@@ -68,20 +78,27 @@ export const AboutPage: FunctionComponent<AboutPageProps> = ({ data }) => {
         </CardContent>
       </Card>
 
-      {/* Experience Section */}
-      <Card className="bg-[#FF6E6C] w-full shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 dark:shadow-[8px_8px_0px_0px_rgba(244,114,182,1)] dark:hover:shadow-[1px_1px_0px_0px_rgba(244,114,182,1)] dark:border-main">
+      {/* Experience Card */}
+      <Card className="w-full bg-white dark:bg-darkBg border-2 dark:border-white
+        shadow-brutal hover:shadow-brutal-sm 
+        hover:translate-x-1 hover:translate-y-1 
+        transition-all duration-200
+        dark:shadow-brutal-orange dark:hover:shadow-brutal-sm-orange">
         <CardHeader>
-          <CardTitle className="text-3xl font-black uppercase">{careerMilestones.title}</CardTitle>
+          <CardTitle className="text-3xl font-black uppercase dark:text-white">{careerMilestones.title}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6 font-body">
           {careerMilestones.experiences.map((experience) => (
-            <Card key={experience.title} className="bg-white border-4 border-black font-sans">
+            <Card key={experience.title} 
+              className="border-2 border-border dark:border-white 
+                bg-[#F4F6F8] dark:bg-darkBg
+                shadow-brutal-sm dark:shadow-brutal-sm-orange">
               <CardHeader>
-                <CardTitle className="text-2xl font-bold">{experience.title}</CardTitle>
-                <CardDescription className="text-lg font-semibold">{experience.period}</CardDescription>
+                <CardTitle className="text-2xl font-bold dark:text-white">{experience.title}</CardTitle>
+                <CardDescription className="text-lg font-semibold dark:text-gray-300">{experience.period}</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-lg">{experience.description}</p>
+                <p className="text-lg dark:text-gray-200">{experience.description}</p>
               </CardContent>
             </Card>
           ))}
