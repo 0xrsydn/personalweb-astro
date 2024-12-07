@@ -7,7 +7,7 @@ tags: ["ai", "coding", "tools"]
 ---
 
 <div class="flex justify-center">
-  <img src="/images/blog/lefunnychatgpt.jpeg" alt="A humorous meme about copying and pasting code from ChatGPT into development projects" width="70%">
+  <img src="/images/blog/lefunnychatgpt.webp" alt="A humorous meme about copying and pasting code from ChatGPT into development projects" width="70%">
 </div>
 
 Nowadays, you can build apps without knowing how to code even not writing single line of code with AI tools. A lot of people with no coding/programming background already shipped their apps (SaaS) with help of AI tools without writing a single line of code.
@@ -37,7 +37,7 @@ In the end, AI-generated code works great as boilerplate for app development or 
 # Playbook
 
 ### A. Prototyping First
-![Example of Bolt usage](/images/blog/bolt-example.png)
+![Example of Bolt usage](/images/blog/bolt-example.webp)
 1. Make a prototype directly on bolt.new (the website version)
 2. Revise and improve it until reaching the limit or achieving a satisfactory look (based on the overall vibe)
 3. From the Bolt web interface, export the repo to GitHub, clone the repo, debug and make further improvements > evaluate and repeat on Cursor until reaching production-grade level. You can deploy directly from the Bolt web interface using Netlify.
@@ -49,7 +49,7 @@ In the end, AI-generated code works great as boilerplate for app development or 
 3. Loop through the generate > try > debug > evaluate > improvement cycle
 
 ### C. UI Improvement with v0
-![Example of v0 usage](/images/blog/v0-example-2.png)
+![Example of v0 usage](/images/blog/v0-example-2.webp)
 UI improvement can be achieved using v0 for UI/UX and component prototyping. It can also be used for creating and styling components. This works particularly well for frontend development, especially with a React + NextJS + Tailwind CSS setup.
 
 ### D. Straight to Production
